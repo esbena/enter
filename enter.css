@@ -1,0 +1,27 @@
+#tool{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#out{
+    width: 90%;
+}
+.obsolete{
+    color: red;
+    text-decoration: line-through;
+}
+#input input{
+    font-size: xx-large;   
+}
+#number, #user{
+    width: 20%;   
+}
+#answer, #id{
+    width: 70%;   
+}
+.newmethod {
+    color: green;   
+}   
+.quote{
+    border: solid black 1px;
+    background-color: #C0C0C0;
+}  
