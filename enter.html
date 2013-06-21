@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script type='text/javascript' src='enter.js'> </script>
+    <link type="text/css" href="enter.css" rel='stylesheet'/>
+    <title>Multiple Choice Answer Entering</title>
+  </head>
+  <body>
+    A tool for entering answers for the multiple choice sets described at <a href='http://users-cs.au.dk/mis/Multiple/'>http://users-cs.au.dk/mis/Multiple/</a>
+    <div class='quote'>    
+      <div>
+
+        <div>
+          ...
+        </div>
+
+        After the test, the answers are collected. Now follows a manual process of typing the answers into a file in the following format:
+        <pre>
+          20060001 7948 1bc2d3-4bc5a
+          20060002 8087 1b2ab3-4-5ab
+          20060003 9294 1a2a3b4ad5d
+          20060004 1063 1d2ac3b4ab5b
+        </pre>
+        <span>There is one line for each student, consisting of the student ID, the 4-digit code for the given copy of the test, and a string that notes the marks. For redundancy, the number of each question must be written, followed by the letters corresponding to selected answers (if no answers have been selected, write a "-").
+        
+        Admittedly, this is a bit tedious; the best strategy is if one person reads the marks and another writes the file.</span>
+        <div>
+          <span class='obsolete'>The file enter.jar contains a small application for making this task easier. It is invoked once for each student and generates a single line that can be appended to the score file. Thus, for the first student above, use the Unix command:</span>
+          <div><tt>java -classpath enter.jar Enter 20060001 7948 >> scores.txt</tt></div>
+        </div>
+        <div>
+          <span class='newmethod'>Use this page instead: <tt>enter</tt> to create a new solution line, <tt>space</tt> to submit the answers to a question.</span>
+        </div>
+        And proceed to enter the characters:
+        <div><tt>b c space d space space b c space a space return</tt></div>
+        In practice, this approach seems to be 4 times faster than using a text editor. The tool provides you with a nice, friendly status window, where you can see the current question number and edit the latest entered characters:
+      </div>
+        <div>
+          ...
+        </div>
+    </div>
+    <div id='tool'>
+      <div>
+        <textarea rows='20' id='out'></textarea>
+      </div>
+      <div id='newarea'>
+        <input id='user' type='text' placeholder='user id'/>
+        <input id='id' type='text' placeholder='set id'/>
+      </div>
+      <div id='input'>
+        <input id='number' type='text'/>
+        <input id='answer' type='text' placeholder='Answer'/>
+      </div>
+    </div>
+  </body>
+</html>
