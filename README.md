@@ -5,9 +5,10 @@ A tool for entering answers for the multiple choice sets described at http://use
 
 Usage
 -----
-A.
+
 1. Host enter.* somewhere.
 2. Open enter.html in a browser.
 
-B.
+OR
+
 1. go to http://cs.au.dk/~esbena/enter.html
