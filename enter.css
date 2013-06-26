@@ -1,10 +1,17 @@
 #tool{
-    margin-left: 10%;
-    margin-right: 10%;
 }
+
 #out{
     width: 90%;
 }
+#out-pretty{
+    width: 90%;
+}
+
+#out-pretty td{
+    text-align: center;
+}
+
 .obsolete{
     color: red;
     text-decoration: line-through;
