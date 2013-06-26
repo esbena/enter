@@ -1,4 +1,5 @@
 #tool{
+
 }
 
 #out{
@@ -6,6 +7,9 @@
 }
 #out-pretty{
     width: 90%;
+}
+#out-pretty table{
+    width: 100%;
 }
 
 #out-pretty td{
