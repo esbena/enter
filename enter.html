@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js'></script>
     <script type='text/javascript' src='enter.js'> </script>
     <link type="text/css" href="enter.css" rel='stylesheet'/>
     <title>Multiple Choice Answer Entering</title>
@@ -13,7 +13,7 @@
       Bug reports and feature requests: <a href='https://github.com/esbena/enter/'>https://github.com/esbena/enter/</a>
     </div>
     <hr/>
-     
+    
     <div class='quote'>    
       <div>
 
@@ -42,22 +42,40 @@
         <div><tt>b c space d space space b c space a space return</tt></div>
         In practice, this approach seems to be 4 times faster than using a text editor. The tool provides you with a nice, friendly status window, where you can see the current question number and edit the latest entered characters:
       </div>
-        <div>
-          ...
-        </div>
+      <div>
+        ...
+      </div>
     </div>
     <div id='tool'>
+      <h2>State</h2>
       <div>
+
         <textarea rows='20' id='out'></textarea>
       </div>
+      <h2>Input</h2>
+      <div class='quote'>    
+        Example usage:
+        <ol>
+          <li>Place cursor in the "student id" field</li>
+          <li>Type the student id &lt;SPACE&gt;</li>
+          <li>Type the question set id &lt;SPACE&gt;</li>
+          <li>Type the answers to question 1: &lt;a&gt;&lt;c&gt;, followed by &lt;SPACE&gt;</li>
+          <li>Type the answers to question 2: &lt;b&gt, followed by &lt;SPACE&gt;</li>
+          <li>...</li>
+          <li>Type the answers to the last question: &lt;a&gt;&lt;b&gt;, followed by &lt;ENTER&gt;</li>
+          <li>Continue from step 2</li>
+        </ol>
+      </div>
+      <div>Play sound for typed answers: <input type='checkbox' id='sound'/></div>
       <div id='newarea'>
-        <input id='user' type='text' placeholder='user id'/>
+        <input id='student' type='text' placeholder='student id'/>
         <input id='id' type='text' placeholder='set id'/>
       </div>
       <div id='input'>
         <input id='number' type='text'/>
         <input id='answer' type='text' placeholder='Answer'/>
       </div>
+      <h2>Pretty print</h2>
       <div>
         <div id='out-pretty'></div>
       </div>
