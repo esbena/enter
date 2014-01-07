@@ -11,4 +11,4 @@ Usage
 
 OR
 
-1. go to http://cs.au.dk/~esbena/enter.html
+1. go to http://cs.au.dk/~esbena/enter/enter.html
