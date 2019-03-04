@@ -1,5 +1,3 @@
-/*jslint plusplus: false, bitwise: true, eqeq: true, unparam: true, white: false, browser: true, onevar: false */
-/*global console: true, window: true, chrome: true, $: true, require: true, exports: true, process: true, alert: true*/
 $(function() {
     var KEY_ENTER = 13;
     var KEY_SPACE = 32;
